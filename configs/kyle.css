@@ -1,0 +1,52 @@
+/** Kyle **/
+
+/* Center Title Page */
+h1 {
+	padding-top: 20rem;
+}
+
+h2 {
+	break-before: page;
+}
+
+h1 + h3,
+h3 + h3,
+h1 {
+	margin: 0 auto 0.25rem !important;
+	width: min-content;
+	white-space: nowrap;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.125em;
+	margin-top: 0.125em;
+}
+
+/* Modifiers */
+
+.double ~ p {
+	line-height: 2;
+}
+
+.no-indent ~ p {
+	text-indent: 0rem;
+}
+
+/* End Modifiers */
+
+/* Double-space and indent paragraphs */
+p {
+	text-indent: 2em;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+/* Quick page break
+<div class="break"></div>
+*/
+.break {
+	page-break-after: always;
+}
